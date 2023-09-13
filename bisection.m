@@ -30,5 +30,6 @@ disp('Output table')
 Result = array2table(HG); %% Convert array to table for displaying
 Result.Properties.VariableNames(1:size(HG,2)) = Variables
 x0 = x0-rem(x0,10^-n); %% convert to n decimal places
+fprintf('%d maximum iterations \n',itermax);
 fprintf('Converged solution after %d iterations \n',iter);
 fprintf('Root is %2.5f \n',x0) %% Final root print
